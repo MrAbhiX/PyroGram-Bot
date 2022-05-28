@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="pyrogram-bot",
+    name="pyrogram_bot",
     version="1.4.0",
     description="HELP FOR PyROGRAM",
     long_description=README,
@@ -28,7 +28,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
-    packages=["pyrogram-bot"],
+    packages=["pyrogram_bot"],
     include_package_data=True,
     install_requires=["requests"],
 )
