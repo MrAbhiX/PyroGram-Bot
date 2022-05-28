@@ -1,8 +1,13 @@
 import pathlib
 from setuptools import setup
+import re
 
 #installing requirements
 requirements = ["pyrogram==1.4.16", "py-tgcalls"]
+
+with open("pyrogram_bot/__init__.py", encoding="utf-8") as f:
+    version = re.findall(r"__version__ = \"(.+)\"", f.read())[0]
+
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -13,7 +18,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="pyrogram_bot",
-    version="1.4.0",
+    version=version,
     description="HELP FOR PyROGRAM",
     long_description=README,
     long_description_content_type="text/markdown",
