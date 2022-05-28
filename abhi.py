@@ -9,4 +9,6 @@ Bot = Client(
     api_hash=os.environ.get("API_HASH")
 )
 
-Bot.run()
+
+
+
