@@ -1,7 +1,7 @@
 dist/*
 build/*
-pyrogram-bot.egg-info/*
-pyrogram-bot.egg-info/
+pyrogram_bot.egg-info/*
+pyrogram_bot.egg-info/
 __pycache__
 test*
 *.log
