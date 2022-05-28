@@ -1,7 +1,7 @@
 import pathlib
 from setuptools import setup
 import re
-
+import setuptools
 #installing requirements
 requirements = ["pyrogram==1.4.16", "py-tgcalls"]
 
@@ -34,7 +34,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
-    packages=["pyrogram_bot"],
+    packages=setuptools.find_packages(),
     include_package_data=True,
     install_requires=requirements,
 )
