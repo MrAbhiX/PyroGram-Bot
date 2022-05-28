@@ -2,6 +2,7 @@ import pathlib
 from setuptools import setup
 
 #installing requirements
+requirements = ["pyrogram==1.4.16", "py-tgcalls"]
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -30,5 +31,5 @@ setup(
     ],
     packages=["pyrogram_bot"],
     include_package_data=True,
-    install_requires=["requests"],
+    install_requires=requirements,
 )
